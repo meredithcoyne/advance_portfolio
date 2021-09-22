@@ -3,42 +3,50 @@
 }*/
 
 :root {
-    --first: rgba(68,88,119,1);
-    --second: rgba(146,204,206,1);
-    --third: rgba(49,52,61,1);
+    --first: rgba(68, 88, 119, 1);
+    --second: rgba(146, 204, 206, 1);
+    --third: rgba(49, 52, 61, 1);
 }
 
-h1{
+h1 {
     width: auto;
     text-align: right;
-    
+
 }
 
 img {
-   width: 100%;
-   height: 400px;
-  }
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+}
 
-.subtitle {
-    position:absolute;
-    margin-top: -50px;
-    margin-left: 1100px;
+.subtitle_1 {
+    position: absolute;
+    margin-top: -80px;
+    margin-left: 1140px;
     background-color: var(--second);
 
 }
 
+.subtitle_2 {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: -150px;
+    background-color: var(--second);
+    font-size: 20px;
+}
 
-body{
-    margin:0;
-    padding:0;
-     font-family: "trebuchet ms", "lucinda sans unicode", "lucida grande", "lucida sans", "Arial", "sans-serif";
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "trebuchet ms", "lucinda sans unicode", "lucida grande", "lucida sans", "Arial", "sans-serif";
 }
 
 header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between ; 
+    justify-content: space-between;
     padding: 15px;
     align-items: center;
     background-color: var(--third);
@@ -47,8 +55,10 @@ header {
 header h1 {
     color: var(--third);
     background-color: var(--second);
-    padding: 5px;
+    padding-left: 50px;
     font-size: 2vw;
+    margin-left: -15px;
+
 }
 
 nav {
@@ -58,7 +68,7 @@ nav {
     padding-right: 20px;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     padding: 10px;
     margin-right: 10px;
@@ -73,23 +83,37 @@ nav a{
 
 nav a:hover {
     background-size: 100% 100%;
-    color:var(--primary);
+    color: var(--primary);
 }
 
-.title {
-  /*width: 50%;*/
-  margin: 50px;
-  padding: 50px;
-  border-right: 5px solid black;
-  text-align: right;
-  font-size: 400%;
-  /*display: block;*/
-  
+.titleA {
+    padding: 50px;
+    border-right: 5px solid black;
+    text-align: right;
+    font-size: 400%;
+}
+
+.titleW {
+    padding: 50px;
+    border-right: 5px solid black;
+    text-align: right;
+    font-size: 400%;
 }
 
 
-.sideTitle {
-    margin-top:10px;
+.titleC {
+    padding: 50px;
+    border-right: 5px solid black;
+    text-align: right;
+    font-size: 400%;
+}
+
+
+
+#aboutBlock,
+#workBlock,
+#contactsBlock {
+    margin-top: 10px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -97,18 +121,22 @@ nav a:hover {
 
 
 
-#profilePic{
-    width:400px;
-    height:400px;
-
+#profilePic {
+    width: 400px;
+    height: 400px;
 }
 
 #aboutMeprofile {
-    width:500px;
-    
+    width: 350px;
 }
 
 #recode {
-    width:750px;
+    width: 750px;
     height: 400px;
+    margin-right: 150px;
+    padding: 0px;
+}
+
+#contact {
+    border-bottom: var(--second) 5px;
 }
