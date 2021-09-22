@@ -6,7 +6,9 @@ Project #2
 - Learned to leverage flex box and css functions to create a format to the page.
 - Created links to resume, links within the page, and a link to my code refactor.
 
-    ![Screenshot]()
+    ![Screenshot](UCF\homework\Week2\Tuesday\advance_portfolio\assets\css\page 1.png)
+    ![Screenshot](UCF\homework\Week2\Tuesday\advance_portfolio\assets\css\page 2.png)
+    ![Screenshot](UCF\homework\Week2\Tuesday\advance_portfolio\assets\css\page 3.png)
 
 ## Link to project
 [link] (https://meredithcoyne.github.io/advance_portfolio/)
