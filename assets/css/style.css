@@ -135,8 +135,5 @@ nav a:hover {
     height: 400px;
     margin-right: 150px;
     padding: 0px;
-}
-
-#contact {
-    border-bottom: var(--second) 5px;
+    border: var(--second) solid 10px;
 }
