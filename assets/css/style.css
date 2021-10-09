@@ -275,3 +275,131 @@ address a:hover {
     background-size: 100% 100%;
     color: var(--lightBlue);
 }
+
+/* Tablet media layout */
+@media screen and (max-width: 950px) {
+    body {
+        transition: all 0.5s ease-in-out;
+    }
+    
+    header {
+        flex-flow: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+    header h1 {
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    nav {
+       margin-bottom: 5px; 
+    }
+
+    .hero-banner figure {
+        background-size: 150%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-banner h2 {
+        margin-left: 0%;
+        margin-right: 0%;
+        padding: 5px;
+    }
+
+    .hero-banner img {
+        width: 200px;
+        margin-right: 4%;
+        margin-left: 4%;
+    }
+    
+    main section {
+        margin-left: 3%;
+    }
+
+    footer {
+        margin-left: 3%;
+    }
+}
+
+/* Mobile media layout */
+@media screen and (max-width: 600px) {
+
+    header h1 {
+        flex: 0 0 50%;
+    }
+
+    nav {
+        margin: 0 auto;
+        flex: 0 0 50%;
+        padding-right: 0%;
+    }
+
+    nav a {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .hero-banner h2 {
+        flex: 0 0 50%;
+    }
+
+    .hero-banner img {
+        width: 150px;
+    }
+
+    main section {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: stretch;
+        margin: auto 5px;
+    }
+
+    section h2 {
+        margin-left: -5%;
+        flex: 0 0 100%;
+        border-right: none;
+        margin-right: 0%;
+        padding-right: 0%;
+        border-bottom: 4px solid var(--slate);
+        margin-bottom: 30px;
+        padding-bottom: 5px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    
+    .workProject:first-child {
+        grid-column: span 4;
+        grid-row: auto;
+    }
+
+    #contact {
+        display: flex;
+        flex-flow: column wrap;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+    
+    #contact h2 {
+        margin-left: -5%;
+        flex: 0 0 20%;
+        border-bottom: 4px solid var(--slate);
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        border-right: none;
+        margin-right: 0;
+        padding-right: 0;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    address a {
+        margin-top: 10px;
+    }
+}
