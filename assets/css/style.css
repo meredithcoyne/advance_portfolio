@@ -5,10 +5,10 @@
 }
 
 :root {
-    --slate: rgba(68, 88, 119, 1);
-    --lightBlue: rgba(146, 204, 206, 1);
-    --navy: rgba(49, 52, 61, 1);
-    --fourth: rgba();
+    --slate: #3F506E;
+    --lightBlue: #89A2D6;
+    --navy: #060646;
+    --pale: #D6D5F5;
 
 }
 
@@ -18,15 +18,16 @@ body {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucinda Grande", "Lucida Sans", Arial, Sans-serif;
     line-height: 1.5;
     position: relative;
+    background-color: var(--pale);
 }
 
 /* header */
 header {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 15px;
-    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
     background-color: var(--navy);
 }
 
@@ -44,9 +45,9 @@ nav {
     margin: auto 0;
     padding-right: 15px;
     text-align: right;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    
+    
+  
 }
 
 nav a {
@@ -140,52 +141,137 @@ section h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
+}
 
+#about img{
+    margin-right:5%;
 }
 
 
 
+
+
 /* work queries */
-.workBlock {}
+.workBlock {
+    flex: 0 0 75%;
+    display: grid;
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+    row-gap: 20px;
+    column-gap: 20px;
+}
 
-.workBlock div {}
+.workBlock div {
+    background-color: #51617a;
+}
 
 
-.workProject {}
+.workProject{
+    color: var(--navy);
+    background-color: var(--slate);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 5px solid var(--lightBlue);
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: flex-end;
+    grid-column: span 4;
+}
 
-workProject:first-child {}
+.workProject:first-child {
+    grid-column: span 8;
+    grid-row: span 2;
+}
 
-.workProject div {}
+.workProject div {
+    margin: 20px 0;
+    color: var(--slate);
+    background-color: var(--lightBlue);
+    padding: 8px 10px;
+}
 
+.refactor {
+    background-image: url(../misc/refactor.png);
+    opacity: 0.7;
+}
 
-/* refactor project */
-.refactor {}
+.refactor:hover {
+    opacity: 1;
+}
 
-.refactor:hover {}
 
 /* future 3rd project */
-.third {}
+.third {
+    background-image: url(../misc/password.png);
+    opacity: 0.7;
+}
 
-.third:hover {}
+.third:hover {
+    opacity: 1;
+}
 
 /* future 4th project */
-.fourth {}
+.fourth {
+    background-image: url(../misc/quiz.png);
+    opacity: 0.7;
+}
 
-.fourth:hover {}
+.fourth:hover {
+    opacity: 1;
+}
 
-/* future 5th project */
-.fifth {}
+/* future 5th project*/
+.fifth {
+    background-image: url(../misc/planner.png);
+    opacity: 0.7;
+}
 
-.fifth:hover {}
+.fifth:hover {
+    opacity: 1;
+}
 
 /* future 6th project */
-.sixth {}
+.sixth {
+    background-image: url(../misc/weather.png);
+    opacity: 0.7;
+}
 
-.sixth:hover {}
+.sixth:hover {
+    opacity: 1;
+}
 
-/* footer */
-#contact {}
+
+/* contact block */
+#contact {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+
+address{
+    justify-content:space-evenly;
+    margin-top: 10px;
+    margin-right: 10px;
+}
 
 address a {
-    margin-top: 10px;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 20px;
+    color: var(--navy);
+    background-image: linear-gradient(270deg, var(--navy) 0%, var(--navy) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% .2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    font-size: 1.4rem;
+}
+
+address a:hover {
+    background-size: 100% 100%;
+    color: var(--lightBlue);
 }
