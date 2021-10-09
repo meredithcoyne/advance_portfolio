@@ -2,72 +2,112 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="assets\css\style.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets\css\style.css">
+  <link rel="stylesheet" href="assets\css\reset.css">
+  <title>Meredith Coyne's Portfolio</title>
 </head>
 
 <body>
+  <!-- Header and Navbar -->
   <header>
     <h1>Meredith Coyne</h1>
     <nav>
-      <a href="#aboutBlock">About Me</a>
-      <a href="#workBlock">Work</a>
-      <a href="#contactsBlock">Contact Me</a>
-      <a href="assets\css\Meredith's Resume.pdf" target="_blank">Resume</a>
+      <a href="about">About Me</a>
+      <a href="work">Work</a>
+      <a href="contact">Contact Me</a>
+      <a href="assets\misc\Meredith's Resume.pdf">Resume</a>
     </nav>
   </header>
 
-  <section>
-    <img src="assets\css\blue_diamond.jpg" alt="Blue Diamond" />
-    <h2 class="subtitle_1">Jedi Programmer</h2>
+  <!-- Hero Image -->
+  <section class="hero-banner">
+    <figure>
+      <img src="assets\misc\hero.jpg" alt="teal abstract">
+      <div>
+        <h2>Journey To Being a Full Stack Developer</h2>
+      </div>
+    </figure>
   </section>
 
+  <!-- Main -->
   <main>
-    <section id="aboutBlock">
-      <h2 class="titleA">About Me</h2>
-      <img id="profilePic" src="assets\css\Profile Photo (2).jpg" />
-      <p id=aboutMeprofile>
-        Before starting my new career in coding, I spent 15 years as a leader for large box retailers in multiple
-        positions. Through those positions I was able to hone my problem solving skills in through innovative thinking.
-        After many years in leadership, I decided to take a different direction by applying my problem solving skills to
-        web development.
-      </p>
-
+    <!-- About Me Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div>
+        <img src="assets\misc\Profile Photo.jpg" alt="profile_photo">
+        <p>
+          While I have spent the last 15 years in retail with various merchandising roles, I am making a move
+          to a career change as a Full Stack Developer. I currently have completed coding experience in HTML
+          and CSS with prior history in coding C/C++. I look forward to continuing my growth and knowledge in
+          the different languages out there!
+        </p>
+      </div>
     </section>
 
+    <!-- Work Highlights Section -->
+    <section id="work">
+      <h2>Work</h2>
+      <div class="workBlock">
+        <!-- Project 1 -->
+        <a href="https://meredithcoyne.github.io/code_refactor/" target="blank" class="refactor workProject">
+          <div>
+            <h3>Code Refactor</h3>
+            <p>HTML/CSS</p>
+          </div>
+        </a>
 
-    <section id="workBlock">
-      <h2 class="titleW">Work</h2>
-      <div id=recode>
-      <a href="https://meredithcoyne.github.io/code_refactor/" target=_blank"><img alt="program data"
-          src="assets\css\programming.jpeg" /></a>
-        </div>
-        </section>
+        <!-- Future Project 3 -->
+        <a href="" target="blank" class="third workProject">
+          <div>
+            <h3>Future Project 3</h3>
+            <p>Javascript</p>
+          </div>
+        </a>
 
-    <section id="contactsBlock">
-      <h2 class="titleC">Contact Me</h2>
-      <a href="tel:+6463025112">646.302.5112</a>
-      <a href="mailto:meredithleigh.coyne@gmail.com">meredithleigh.coyne@gmail.com</a>
-      <a href="https://github.com/meredithcoyne" target="_blank">GitHub</a>
-      <a href="https://www.twitter.com" target="_blank">Twitter</a>
-      <a href="https://www.spotify.com" target="_blank">Spotify</a>
+        <!-- Future Project 4 -->
+        <a href="" target="blank" class="forth workProject">
+          <div>
+            <h3>Future Project 4</h3>
+            <p>Web API's</p>
+          </div>
+        </a>
+
+        <!-- Future Project 5 -->
+        <a href="" target="blank" class="fifth workProject">
+          <div>
+            <h3>Future Project 5</h3>
+            <p>3rd Party API</p>
+          </div>
+        </a>
+
+        <!-- Future Project 6 -->
+        <a href="" target="blank" class="sixth workProject">
+          <div>
+            <h3>Server Side API</h3>
+            <p>Third Party API</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div>
+        <address>
+          <a href="tel:+646-302-5112">646.302.5112</a>
+          <a href="mailto:meredithleigh.coyne@gmail.com">meredithleigh.coyne@gmail.com</a>
+          <a href="https://linkedin.com/meredithcoyne" target="blank">LinkedIn</a>
+          <a href="https://github.com/meredithcoyne" target="blank">Github</a>
+        </address>
+      </div>
     </section>
   </main>
+
 </body>
 
 </html>
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
