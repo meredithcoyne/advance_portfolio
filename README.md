@@ -1,15 +1,18 @@
-# advance profile
-Project #2
+# Personal Porfolio
 
-## Description
-- Create a program from scrath that can keep its proportions while staying functional with its proportions
-- Learned to leverage flex box and css functions to create a format to the page.
-- Created links to resume, links within the page, and a link to my code refactor.
 
-    ![Screenshot](UCF\homework\Week2\Tuesday\advance_portfolio\assets\css\page 1.png)
-    ![Screenshot](UCF\homework\Week2\Tuesday\advance_portfolio\assets\css\page 2.png)
-    ![Screenshot](UCF\homework\Week2\Tuesday\advance_portfolio\assets\css\page 3.png)
+## Functionality
+* Create a portfolio from scratch using CSS 
+* Website has navigation that directs you to About Me section, Contacts, and projects I have created.
+* Resume navigation link sends you to a new tab with a pdf copy of my resume,.
+* Work section has image links that send you to the deployed sites of the projects.
 
-## Link to project
-[link] (https://meredithcoyne.github.io/advance_portfolio/)
+## Demo
+
+![Portfolio](assets\misc\portfolio.gif)
+
+## Websites
+
+* [Github](https://github.com/meredithcoyne/advance_portfolio)
+* [Deployed Site](https://meredithcoyne.github.io/advance_portfolio/)
 ---
