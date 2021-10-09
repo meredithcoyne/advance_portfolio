@@ -6,6 +6,7 @@
 * Website has navigation that directs you to About Me section, Contacts, and projects I have created.
 * Resume navigation link sends you to a new tab with a pdf copy of my resume,.
 * Work section has image links that send you to the deployed sites of the projects.
+* Page resizes for a tablet and mobile view using Media Queries.
 
 ## Demo
 
