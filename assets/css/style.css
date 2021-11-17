@@ -137,11 +137,11 @@ section h2 {
     color: var(-text);
 }
 
-.heading{
+.heading {
     color: var(--nav);
-    font-weight:bold;
+    font-weight: bold;
     font-style: italic;
-  
+
 }
 
 /* about me */
@@ -153,7 +153,7 @@ section h2 {
 
 }
 
-.about{
+.about {
     color: var(--text);
     font-weight: bold;
     font-style: italic;
@@ -193,9 +193,11 @@ section h2 {
     text-decoration: none;
     display: flex;
     align-items: flex-end;
-    grid-column: span 4;
+    grid-column: span 8;
+    grid-row: auto;
 }
 
+/* 
 .workProject:first-child {
     grid-column: span 8;
     grid-row: span 2;
@@ -204,7 +206,12 @@ section h2 {
 .workProject:second-child {
     grid-column: span 8;
     grid-row: span 2;
-}
+} */
+
+/* .workProject:second-child {
+        grid-column: span 4;
+        grid-row: auto;
+    } */
 
 .workProject div {
     margin: 20px 0;
@@ -212,6 +219,17 @@ section h2 {
     padding: 8px 10px;
 }
 
+/* project 2 - All Things Pets */
+.project_2 {
+    background-image: url(../misc/pets.png);
+    opacity: 0.7;
+}
+
+.project_2:hover {
+    opacity: 1;
+}
+
+/* project 1 - Easy Stack */
 .project_1 {
     background-image: url(../misc/refactor.png);
     opacity: 0.7;
@@ -222,7 +240,7 @@ section h2 {
 }
 
 
-/* future 3rd project */
+/* weather project */
 .weather {
     background-image: url(../misc/weather.png);
     opacity: 0.7;
@@ -232,7 +250,7 @@ section h2 {
     opacity: 1;
 }
 
-/* future 4th project */
+/* quiz project */
 .quiz {
     background-image: url(../misc/quiz.png);
     opacity: 0.7;
@@ -242,7 +260,7 @@ section h2 {
     opacity: 1;
 }
 
-/* future 5th project*/
+/* planner project*/
 .password {
     background-image: url(../misc/planner.png);
     opacity: 0.7;
@@ -252,7 +270,7 @@ section h2 {
     opacity: 1;
 }
 
-/* future 6th project */
+/* password project */
 .planner {
     background-image: url(../misc/password.png);
     opacity: 0.7;
@@ -297,7 +315,7 @@ address a:hover {
 }
 
 /* Tablet media layout */
-@media screen and (max-width: 825px) and (min-width: 600px){
+@media screen and (max-width: 825px) and (min-width: 600px) {
     body {
         transition: all 0.5s ease-in-out;
     }
@@ -409,10 +427,7 @@ address a:hover {
     }
 
 
-    .workProject:second-child {
-        grid-column: span 4;
-        grid-row: auto;
-    }
+
 
     #contact {
         display: flex;
