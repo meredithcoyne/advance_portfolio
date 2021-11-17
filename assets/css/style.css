@@ -201,6 +201,11 @@ section h2 {
     grid-row: span 2;
 }
 
+.workProject:second-child {
+    grid-column: span 8;
+    grid-row: span 2;
+}
+
 .workProject div {
     margin: 20px 0;
     color: var(--slate);
@@ -404,7 +409,7 @@ address a:hover {
     }
 
 
-    .workProject:first-child {
+    .workProject:second-child {
         grid-column: span 4;
         grid-row: auto;
     }
